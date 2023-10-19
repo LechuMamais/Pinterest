@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home"><img src="#" alt="logo_pinterest"></a>
+        <a href="#home">Inicio</a>
+        <a href="#explore">Explorar</a>
+
+
+        <div class="dropdown">
+            <button id="dropdown-button">Crear</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#crear_idea_pin">Crear Idea Pin</a>
+                <br>
+                <a href="#crear_pin">Crear Pin</a>
+            </div>
+        </div>
+
+        <form action="·" method="post">
+            <input type="text" name="buscar" placeholder="Buscar..." />
+            <input type="submit" value="Buscar" />
+        </form>
+
+
+    </header>
+
+
+    <main>
+        <article>
+            <div class="media-content"></div>
+            <div>
+                <button>Perfil</button>
+                <button>Guardar</button>
+            </div>
+            <div>
+                <a href="#"></a>
+                <button>⬆️</button>
+                <button>...</button>
+            </div>
+        </article><article>
+            <div class="media-content"></div>
+            <div>
+                <button>Perfil</button>
+                <button>Guardar</button>
+            </div>
+            <div>
+                <a href="#"></a>
+                <button>⬆️</button>
+                <button>...</button>
+            </div>
+        </article><article>
+            <div class="media-content"></div>
+            <div>
+                <button>Perfil</button>
+                <button>Guardar</button>
+            </div>
+            <div>
+                <a href="#"></a>
+                <button>⬆️</button>
+                <button>...</button>
+            </div>
+        </article><article>
+            <div class="media-content"></div>
+            <div>
+                <button>Perfil</button>
+                <button>Guardar</button>
+            </div>
+            <div>
+                <a href="#"></a>
+                <button>⬆️</button>
+                <button>...</button>
+            </div>
+        </article><article>
+            <div class="media-content"></div>
+            <div>
+                <button>Perfil</button>
+                <button>Guardar</button>
+            </div>
+            <div>
+                <a href="#"></a>
+                <button>⬆️</button>
+                <button>...</button>
+            </div>
+        </article>
+    </main>
+
+
+
+
+
+
+    <script>
+        // Obtener el botón y el menú desplegable por sus IDs
+        const button = document.getElementById('dropdown-button');
+        const dropdown = document.getElementById('myDropdown');
+        // Agregar un evento click al botón para mostrar/ocultar el menú
+        button.addEventListener('click', function () {
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
